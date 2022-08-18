@@ -1,0 +1,82 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+.nav {
+  background-color: rgba(0, 0, 0, 0.805);
+  width: 100vw;
+  height: 8rem;
+}
+ul {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 5rem;
+}
+li {
+  list-style: none;
+  margin: 2rem;
+}
+.logo {
+  display: flex;
+}
+.logo img {
+  width: 10rem;
+  border-radius: 50%;
+  border: 2px solid black;
+}
+.brand {
+  color: white;
+  font-size: 2.2rem;
+  margin-top: 1.2rem;
+  cursor: pointer;
+}
+.btn {
+  cursor: pointer;
+  background-color: rgb(225, 62, 62);
+  padding: 0.8rem;
+  border-radius: 10px;
+  font-weight: 700;
+  font-size: 2rem;
+}
+#main {
+  margin: 4rem;
+  padding: 0.5rem;
+  border-radius: 5px;
+  background-color: rgb(228, 227, 227);
+  justify-content: space-between;
+  display: flex;
+  position: absolute;
+}
+.info {
+  margin: 0.2rem;
+  font-size: medium;
+  padding: 2rem;
+  background-color: rgb(124, 124, 208);
+  border: 2px solid black;
+  border-radius: 5px;
+}
+.name {
+  padding: 2px 0;
+  text-align: center;
+}
+@media screen and (max-width: 600px) {
+  #main {
+    flex-direction: column;
+    margin-left: 8rem;
+    margin-right: 4rem;
+  }
+  ul {
+    margin: 2px;
+  }
+  .logo img {
+    width: 1px;
+    visibility: collapse;
+  }
+  .brand {
+    width: 4px;
+  }
+}
